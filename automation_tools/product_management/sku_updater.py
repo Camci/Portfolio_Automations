@@ -38,7 +38,7 @@ def fetch_products_graphql():
     }
     query = """
     query ($cursor: String) {
-      products(first: 250, after: $cursor, query: "title:*CUFF*") {
+      products(first: 250, after: $cursor, query: "title:*Example QUERY*") {
         pageInfo {
           hasNextPage
         }
