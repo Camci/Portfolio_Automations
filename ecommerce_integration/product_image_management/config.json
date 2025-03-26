@@ -1,0 +1,118 @@
+{
+  "general": {
+    "max_workers": 4,
+    "cache_dir": ".cache",
+    "output_dir": "output",
+    "log_level": "INFO"
+  },
+  
+  "processing": {
+    "resize": {
+      "width": 1200,
+      "height": 1200,
+      "preserve_aspect_ratio": true,
+      "interpolation": "lanczos"
+    },
+    "optimize": {
+      "quality": 85,
+      "format": "webp",
+      "strip_metadata": true
+    },
+    "watermark": {
+      "path": "assets/watermark.png",
+      "opacity": 0.3,
+      "position": "bottom-right",
+      "scale": 0.15
+    },
+    "background": {
+      "remove": true,
+      "fill_color": "#FFFFFF"
+    },
+    "shadow": {
+      "enabled": true,
+      "opacity": 0.5,
+      "blur_radius": 20,
+      "offset_x": 0,
+      "offset_y": 10
+    }
+  },
+  
+  "metal_variations": {
+    "templates": {
+      "yellow_gold": {
+        "hue": 45,
+        "saturation": 100,
+        "lightness": 80
+      },
+      "white_gold": {
+        "hue": 220,
+        "saturation": 10,
+        "lightness": 85
+      },
+      "rose_gold": {
+        "hue": 0,
+        "saturation": 75,
+        "lightness": 75
+      },
+      "silver": {
+        "hue": 240,
+        "saturation": 5,
+        "lightness": 88
+      },
+      "platinum": {
+        "hue": 220,
+        "saturation": 3,
+        "lightness": 90
+      }
+    }
+  },
+  
+  "quality": {
+    "min_width": 800,
+    "min_height": 800,
+    "max_file_size": 2097152,  // 2MB
+    "formats": ["jpg", "png", "webp"],
+    "min_dpi": 72,
+    "color_profile": "sRGB",
+    "compression_ratio": 0.8
+  },
+  
+  "storage": {
+    "local": {
+      "destination": "output"
+    },
+    "aws": {
+      "region": "us-east-1",
+      "bucket": "my-product-images",
+      "prefix": "products/",
+      "acl": "public-read"
+    },
+    "shopify": {
+      "store_url": "my-jewelry-store.myshopify.com",
+      "api_key": "YOUR_API_KEY",
+      "password": "YOUR_API_PASSWORD",
+      "api_version": "2023-01"
+    }
+  },
+  
+  "naming": {
+    "pattern": "{product_id}_{metal}_{angle}_{size}",
+    "separator": "_",
+    "lowercase": true
+  },
+  
+  "profiles": {
+    "standard": {
+      "operations": ["resize", "optimize"]
+    },
+    "premium": {
+      "operations": ["resize", "optimize", "remove_background", "add_shadow"]
+    },
+    "marketplace": {
+      "operations": ["resize", "optimize", "watermark"]
+    },
+    "social": {
+      "operations": ["resize", "optimize", "color_boost"]
+    }
+  }
+} 
