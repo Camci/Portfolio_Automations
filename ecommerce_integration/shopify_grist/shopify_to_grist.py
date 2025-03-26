@@ -24,8 +24,10 @@ start_time = datetime.now()
 
 api = GristDocAPI(DOC_ID, server=SERVER, api_key=grist_api)
 
-customer_Table = "Customers"
-order_Table = "Orders"
+#Your Customer Tabkle ID and Order Table ID
+## NOTE: IF YOU WANT TO USE THIS CODE, PLEASE MAKE SURE TTHAT YOUR TABLES HAVE THE SAME COLUMN NAMES!
+customer_Table = "Customers_Table_Name"
+order_Table = "Orders_Table_Name"
 
 grist_data_customer = api.fetch_table(customer_Table)
 grist_data_order = api.fetch_table(order_Table)
