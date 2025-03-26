@@ -12,9 +12,6 @@ This project provides a bidirectional synchronization system between Shopify e-c
 ## Files
 
 - `shopify_to_grist.py` - Core integration script for syncing Shopify orders and customers to Grist
-- `shopify_grist_CustomerPhoenFF.py` - Enhanced customer data synchronization with phone number validation
-- `Shop_Grist_OrderCheck_Payment.py` - Payment verification and processing
-- `Shop_Grist_OrderCheck_Refund_Return.py` - Refund and return handling
 
 ## Requirements
 
