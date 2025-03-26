@@ -1,0 +1,150 @@
+# Google Ads Analytics Configuration
+
+# API settings
+api:
+  # Default date range for reports (in days)
+  default_date_range: 30
+  
+  # API version
+  api_version: "v13"
+  
+  # API request timeout in seconds
+  timeout: 300
+  
+  # Maximum number of retries for API requests
+  max_retries: 3
+  
+  # Sleep time between retries (in seconds)
+  retry_sleep: 5
+
+# Reporting settings
+reporting:
+  # Default metrics to include in reports
+  default_metrics:
+    - impressions
+    - clicks
+    - cost
+    - conversions
+    - conversion_value
+    - ctr
+    - cpc
+    - cpa
+    - roas
+  
+  # Default dimensions to include in reports
+  default_dimensions:
+    - campaign
+    - ad_group
+    - date
+  
+  # Report output format (options: csv, xlsx, json)
+  output_format: "csv"
+  
+  # Date format for report filenames
+  date_format: "%Y%m%d"
+  
+  # Include headers in CSV reports
+  include_headers: true
+  
+  # Split large reports into multiple files
+  split_large_reports: false
+  
+  # Maximum rows per file when splitting large reports
+  max_rows_per_file: 100000
+
+# Visualization settings
+visualization:
+  # Default chart style (options: whitegrid, darkgrid, white, dark, ticks)
+  chart_style: "whitegrid"
+  
+  # Default color palette for charts
+  color_palette: "deep"
+  
+  # Default chart size (width, height) in inches
+  chart_size: [12, 6]
+  
+  # Default output format for charts (options: png, pdf, svg)
+  output_format: "png"
+  
+  # DPI for rasterized output formats
+  dpi: 300
+  
+  # Include title on charts
+  include_title: true
+  
+  # Include legend on charts
+  include_legend: true
+  
+  # Automatically adjust text size based on chart dimensions
+  auto_adjust_text: true
+
+# Cache settings
+cache:
+  # Enable caching of API responses
+  enabled: true
+  
+  # Cache expiration time (in hours)
+  expiration: 24
+  
+  # Cache directory
+  directory: ".cache"
+  
+  # Compress cached data
+  compress: true
+  
+  # Maximum cache size (in MB)
+  max_size: 500
+  
+  # Clear cache before running
+  clear_on_start: false
+
+# Logging settings
+logging:
+  # Log level (options: DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  level: "INFO"
+  
+  # Log file path
+  file: "google_ads_analytics.log"
+  
+  # Log file rotation size (in MB)
+  max_size: 10
+  
+  # Number of backup log files to keep
+  backup_count: 3
+  
+  # Include timestamp in logs
+  include_timestamp: true
+  
+  # Include log level in logs
+  include_level: true
+  
+  # Include line number in logs
+  include_line: true
+
+# Email notification settings
+notifications:
+  # Enable email notifications
+  enabled: false
+  
+  # SMTP server settings
+  smtp_server: "smtp.example.com"
+  smtp_port: 587
+  smtp_username: "user@example.com"
+  smtp_password: "your_password"
+  
+  # Sender email address
+  sender: "googleads@example.com"
+  
+  # Recipient email addresses
+  recipients:
+    - "analyst@example.com"
+    - "manager@example.com"
+  
+  # Send email on error
+  send_on_error: true
+  
+  # Send email on completion
+  send_on_completion: true
+  
+  # Include reports as attachments
+  include_attachments: true 

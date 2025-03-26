@@ -1,0 +1,189 @@
+{
+  "metal_densities": {
+    "10K Yellow Gold": 11.5,
+    "14K Yellow Gold": 12.9,
+    "18K Yellow Gold": 15.2,
+    "22K Yellow Gold": 17.8,
+    "24K Yellow Gold": 19.32,
+    "10K White Gold": 11.5,
+    "14K White Gold": 12.9,
+    "18K White Gold": 15.2,
+    "10K Rose Gold": 11.5,
+    "14K Rose Gold": 12.9,
+    "18K Rose Gold": 15.2,
+    "Sterling Silver": 10.36,
+    "Fine Silver (999)": 10.49,
+    "Platinum (950)": 20.1,
+    "Platinum (900)": 19.7,
+    "Palladium": 12.02,
+    "Titanium": 4.43,
+    "Stainless Steel": 7.85,
+    "Tungsten": 19.25,
+    "Cobalt Chrome": 8.3
+  },
+  
+  "stone_densities": {
+    "Diamond": 3.52,
+    "Sapphire": 4.0,
+    "Ruby": 4.0,
+    "Emerald": 2.76,
+    "Amethyst": 2.65,
+    "Aquamarine": 2.7,
+    "Topaz": 3.5,
+    "Opal": 2.15,
+    "Garnet": 4.3,
+    "Peridot": 3.34,
+    "Tanzanite": 3.35,
+    "Turquoise": 2.76,
+    "Citrine": 2.65,
+    "Moonstone": 2.58,
+    "Cubic Zirconia": 5.8,
+    "Moissanite": 3.22,
+    "Pearl": 2.71,
+    "Jade": 3.3,
+    "Morganite": 2.71,
+    "Alexandrite": 3.73
+  },
+  
+  "metal_prices": {
+    "last_updated": "2023-03-25T08:00:00Z",
+    "currency": "USD",
+    "unit": "per gram",
+    "prices": {
+      "24K Gold": 65.12,
+      "18K Gold": 48.84,
+      "14K Gold": 38.06,
+      "10K Gold": 27.26,
+      "Sterling Silver": 0.89,
+      "Platinum": 32.85,
+      "Palladium": 48.23
+    }
+  },
+  
+  "chain_types": {
+    "cable": {
+      "weight_factor": 0.35,
+      "description": "Simple round links connected in a uniform pattern"
+    },
+    "curb": {
+      "weight_factor": 0.5,
+      "description": "Flat, interlocking links that lie flat"
+    },
+    "figaro": {
+      "weight_factor": 0.45,
+      "description": "Pattern of different sized links, typically 1 long link followed by 2-3 shorter links"
+    },
+    "rope": {
+      "weight_factor": 0.6,
+      "description": "Twisted links that resemble a rope"
+    },
+    "snake": {
+      "weight_factor": 0.4,
+      "description": "Flexible chain with tightly connected plates"
+    },
+    "box": {
+      "weight_factor": 0.55,
+      "description": "Square or rectangular links connected in a uniform pattern"
+    },
+    "herringbone": {
+      "weight_factor": 0.7,
+      "description": "Flat, V-shaped links that lie flat against the skin"
+    },
+    "wheat": {
+      "weight_factor": 0.65,
+      "description": "Twisted oval links that create a textured appearance"
+    },
+    "mariner": {
+      "weight_factor": 0.48,
+      "description": "Oval links with a bar across the center"
+    },
+    "singapore": {
+      "weight_factor": 0.42,
+      "description": "Twisted curb chain with a diamond-cut finish"
+    }
+  },
+  
+  "ring_size_conversions": {
+    "US_to_diameter_mm": {
+      "3": 14.1,
+      "3.5": 14.5,
+      "4": 14.9,
+      "4.5": 15.3,
+      "5": 15.7,
+      "5.5": 16.1,
+      "6": 16.5,
+      "6.5": 16.9,
+      "7": 17.3,
+      "7.5": 17.7,
+      "8": 18.1,
+      "8.5": 18.5,
+      "9": 18.9,
+      "9.5": 19.3,
+      "10": 19.7,
+      "10.5": 20.1,
+      "11": 20.5,
+      "11.5": 20.9,
+      "12": 21.3,
+      "12.5": 21.7,
+      "13": 22.1
+    },
+    "US_to_UK": {
+      "3": "F",
+      "3.5": "G",
+      "4": "H½",
+      "4.5": "I½",
+      "5": "J½",
+      "5.5": "K½",
+      "6": "L½",
+      "6.5": "M½",
+      "7": "N½",
+      "7.5": "O½",
+      "8": "P½",
+      "8.5": "Q½",
+      "9": "R½",
+      "9.5": "S½",
+      "10": "T½",
+      "10.5": "U½",
+      "11": "V½",
+      "11.5": "W½",
+      "12": "X½",
+      "12.5": "Z",
+      "13": "Z+1"
+    }
+  },
+  
+  "setting_types": {
+    "prong": {
+      "volume_mm3": 2.0,
+      "description": "Metal claws that hold the stone in place"
+    },
+    "bezel": {
+      "volume_mm3": 12.0,
+      "description": "Metal rim that surrounds the stone"
+    },
+    "channel": {
+      "volume_mm3": 8.0,
+      "description": "Stones set between two parallel walls of metal"
+    },
+    "pavé": {
+      "volume_mm3": 1.5,
+      "description": "Small stones set close together"
+    },
+    "halo": {
+      "volume_mm3": 15.0,
+      "description": "Small stones surrounding a center stone"
+    },
+    "cathedral": {
+      "volume_mm3": 20.0,
+      "description": "Setting with arches like a cathedral"
+    },
+    "tension": {
+      "volume_mm3": 18.0,
+      "description": "Stone held by pressure between two parts of the ring"
+    },
+    "flush": {
+      "volume_mm3": 5.0,
+      "description": "Stone set into the metal with a smooth surface"
+    }
+  }
+} 
